@@ -1,5 +1,5 @@
 {
-  "name": "fact_explanation_annotator",
+  "name": "claim-justification_annotator",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
     "vue": "^3.2.29",
     "vue-cookies": "^1.7.4",
     "vue-router": "^4.0.0-0",
+    "vue3-cookies": "^1.0.6",
     "vuejs-dialog": "^1.4.2",
     "vuex": "^4.0.2"
   },

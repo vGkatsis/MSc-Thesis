@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import VueCookies from 'vue-cookies'
+import VueCookies from 'vue3-cookies'
 import 'gitart-vue-dialog/dist/style.css'
 import { GDialog } from 'gitart-vue-dialog'
 import App from './App.vue'
