@@ -1,4 +1,4 @@
-# fact_explanation_annotator
+# claim-justification_annotator
 
 ## Project setup
 ```
