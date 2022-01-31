@@ -1,0 +1,44 @@
+{
+  "name": "fact_explanation_annotator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "eslint": "^8.7.0",
+    "gitart-vue-dialog": "^1.2.3",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "sass-loader": "^10.1.1",
+    "vue": "^3.2.29",
+    "vue-cookies": "^1.7.4",
+    "vue-router": "^4.0.0-0",
+    "vuejs-dialog": "^1.4.2",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.13",
+    "@types/lodash": "^4.14.178",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.2.29",
+    "sass": "^1.49.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
