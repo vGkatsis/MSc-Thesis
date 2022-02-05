@@ -54,7 +54,7 @@
                                 </div>
                                 We consider a claim Distorted when the truth has been deliberately changed.
                                 
-                                <br><br>e.g.
+                                <br><br>e.g. 1
 
                                 <br><br>-Claim:
                                     <br>George Washington said a free people should be armed to guard against government tyranny.
@@ -62,13 +62,21 @@
                                 <br><br>-Justification:  
                                     <br>"George Washington said a free people should be an armed people," seemingly tracks Washingtons words to the nation: "A free people ought not only to be armed, but disciplined. "Contrary to Gohmerts characterization, though, Washington was not speaking about citizens arming themselves in case of government tyranny. Quite the opposite: The president and former general was calling for disciplined troops to fight on behalf of the government.
 
+                                <br><br>e.g. 2
+
+                                <br><br>-Claim:
+                                    <br>Vice President Joe Biden "admits that the American people are being scammed" with the economic stimulus package.
+
+                                <br><br>-Justification:  
+                                    <br>Boehner may be technically correct that Biden mentioned people being scammed in the roundtable meeting. But Boehner incorrectly suggests the vice president called the stimulus a scam and he fails to note that Biden promised "to expose abuses whenever they were detected," as the AP reported.
+
 
                                 <div class="h6" style="margin-top: 30px; margin-bottom: 15px;">
                                 ---------- Emphasis ----------
                                 </div>
-                                The Emphasis class should contain claims that select and emphasize on a single fact although the truth is more complex.
+                                The Emphasis class should contain claims that select and emphasize on a single fact from a complex truth.
 
-                                <br><br>e.g.
+                                <br><br>e.g. 1
 
                                 <br><br>-Claim:
                                     <br>President Obama once said he wants everybody in America to go to college.
@@ -76,32 +84,50 @@
                                 <br><br>-Justification:
                                     <br>We found 18 statements from Obama about people attending college. In the vast majority of the 18, Obama talked about making college a possibility or included the option of attending community colleges or vocational training instead.
 
+                                <br><br>e.g. 2
+
+                                <br><br>-Claim:
+                                    <br>When asked by a reporter whether hes at the center of a criminal scheme to violate campaign laws, Gov. Scott Walker nodded yes.
+
+                                <br><br>-Justification:
+                                    <br>A Democratic Party web video making the rounds on social media shows a grim-faced Gov. Scott Walker appearing to bob his head yes to a reporters question about whether he was at the center of a "criminal scheme" to evade campaign finance laws. In real life, the governor answered an emphatic "no" -- not surprising given hes been denying any wrongdoing since new documents were released in the John Doe investigation.
+
 
                                 <div class="h6" style="margin-top: 30px; margin-bottom: 15px;">
                                 ---------- Unfounded ----------
                                 </div>
                                 If there is no fact supporting the claim then the corresponding class is Unfounded.
 
-                                <br><br>e.g.
+                                <br><br>e.g. 1
 
                                 <br><br>-Claim:
                                     <br>President Barack Obama has said that everybody should hate the police.
 
                                 <br><br>-Justification:
                                     <br>Giuliani said Obama has said "that everybody should hate the police. "Throughout all of his comments since August, when the latest unrest over racial disparities in the criminal justice system began, Obama has continuously encouraged working with police to find solutions and make change. He has also repeatedly emphasized the importance of law enforcement in communities of color and the fact that police officers have a dangerous job.
-                            
+
+                                <br><br>e.g. 2
+
+                                <br><br>-Claim:
+                                    <br>John McCain has done nothing to help the veterans.
+
+                                <br><br>-Justification:
+                                    <br>Trump said that McCain "has done nothing to help the vets. "While many veterans groups have had their differences with McCain over the years over specific legislation and his general approach to veterans issues, thats not the same as saying hes done "nothing" for veterans. In fact, just within the past two years, McCain has sponsored and helped enact several major provisions to help veterans. He also devotes a significant portion of his office staff to offer veterans on casework.
+
                                 <div class="h4" style="margin-top: 30px; margin-bottom: 20px;">
-                                    Usage
+                                    Usage Information
                                 </div>
-                                <ul>
-                                    <li>Whenever you are ready to start, just click on the <b>Start Annotation</b> button, at the end of this page.</li>
-                                    <li>You will be able to return to the Introduction and Exapmles page without losing the progress you have made, using th <b>Intro</b> button.</li>
-                                    <li>During the annotation process you will be prompted to choose between one of the four selections (3 Classes + Unclear option). After selecting then click on confirm button in order for your selection to be saved.</li>
-                                    <li>The Back(Left Arrow) and Next(Right Arrow) buttons will allow you to move back and forth between claims.</li>
-                                    <li>When you have completed the form just click on <b>Submit Results</b>, copy the text that will appear on your screen and mail it to <b>john.doe@somemail.com</b>.</li>
-                                    <li>The annotation tool makes use of <b>cookies</b>, so the progress you have made will be kept if you close the window, but it <b>wont</b> be kept if you clean browser cookies!</li>
-                                    <li>Lastly if at any moment you want to restart the process all over again the click the <b>RESET</b> button and everything will be cleaned.</li>
-                                </ul>
+                                <ol>
+                                    <li>Whenever you are ready to start, just click on the <b>Start Annotation</b> button, at the end of this page.</li><br>
+                                    <li>You will be able to return to the Introduction and Examples page without losing the progress you have made, using the <b>Intro</b> button (up left).</li><br>
+                                    <li>During the annotation process you will be prompted to choose between one of four selections (3 Classes + Unclear option). After selecting then click on <b>Confirm</b> button in order for your selection to be saved.</li><br>
+                                    <li>The <b>Back</b>(Left Arrow) and <b>Next</b>(Right Arrow) buttons will allow you to move back and forth between claims.</li><br>
+                                    <li>When you have completed the form just click on <b>Submit Results</b>, copy the text that will appear on your screen and mail it to <b>results.claim.justification@gmail.com</b>.</li><br>
+                                    <li>The <b>Submit Results</b> button will be available to click after you have completed just <b>one</b> annotation. If for any reason you want to stop and you think that you wont be able to continue the process then please submit the results that you have made so far. </li><br>
+                                    <li>You have been assigned <b>{{ this.elements.length }}</b> claims to annotate. We estimate that each claim will need a maximum of 5 minutes to be annotated. In case you dont want to annotate all of them, we would appreciate it if you could just annotate <b>{{ Math.floor(this.elements.length / 2) }}</b>. </li><br>
+                                    <li>The annotation tool makes use of <b>cookies</b> and saves your progress for <b>7 days</b> so that you can complete the process in that period. All the choices you have made will be kept if you close the window and restart, but it <b>wont</b> be kept if you clear browser cookies!</li><br>
+                                    <li>Lastly if at any moment you want to restart the process all over again, click the <b>RESET</b> button (up right) and everything will be cleaned.</li><br>
+                                </ol>
                             </div>
                         </div>
 
@@ -130,7 +156,7 @@
                 
                 <div class="h-75 w-75">
                     
-                    <label for="evaluationTextArea"><i><b>Please copy/paste the following text and email it to us at john.doe@somemail.com:</b></i></label>
+                    <label for="evaluationTextArea"><i><b>Please copy/paste the following text and email it to us at results.claim.justification@gmail.com:</b></i></label>
                     
                     <textarea id="evaluationTextArea" class="h-100 w-100" ref="copyThis" v-model="resultsMessage"></textarea>
                 </div>
@@ -173,7 +199,7 @@
                     
                     <!-- Top Page Numbering -->
                     <div class="row col-12 d-flex justify-content-center p-2" v-if="this.element">
-                        <div class="border text-center align-self-center">{{ this.element.id + 1}} / {{
+                        <div class="border text-center align-self-center">{{ this.element.id + 1 }} / {{
                             this.elements.length
                             }}
                         </div>
@@ -285,7 +311,7 @@
                             <div class="row col-10 justify-content-center">
                                 <button id="submitEvaluationBtn" type="button" class="btn btn-success" style="margin-top: 20px;"
                                         v-on:click="switchViewMode"
-                                    v-bind:disabled="Object.keys(this.results).length < this.elements.length">
+                                    v-bind:disabled="Object.keys(this.results).length === 0">
                                     Submit Results
                                 </button>
                                 
@@ -356,13 +382,13 @@
         methods: {            
             goToIntroduction() {
                 this.introMode=true;
-                this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '1d');    
+                this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '7d');    
             },
 
             switchViewMode() {
                 if (this.introMode){
                     this.introMode=false;
-                    this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '1d');
+                    this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '7d');
                 }else if (this.resultsMode)
                     this.resultsMode = false;
                 else {
@@ -387,13 +413,13 @@
                 this.updateResultsGivenId(this.element.id);
                 this.fetchNextInstance();
                 this.updateEvaluationGUIGivenId(this.element.id);
-                this.$cookies.set('index', JSON.stringify({"index": this.element.id}), '1d');
+                this.$cookies.set('index', JSON.stringify({"index": this.element.id}), '7d');
             },
             previousButton() {
                 this.updateResultsGivenId(this.element.id);
                 this.fetchPreviousInstance();
                 this.updateEvaluationGUIGivenId(this.element.id);
-                this.$cookies.set('index', JSON.stringify({"index": this.element.id}), '1d');
+                this.$cookies.set('index', JSON.stringify({"index": this.element.id}), '7d');
             },
             confirmButton() {
                 this.updateResultsGivenId(this.element.id);
@@ -445,7 +471,7 @@
                         "unclear": this.unclear
                     };
                 }
-                this.$cookies.set('results', JSON.stringify({"results": this.results}), '1d');
+                this.$cookies.set('results', JSON.stringify({"results": this.results}), '7d');
             },
             updateEvaluationGUIGivenId(id) {
                 if (id in this.results) {
@@ -528,11 +554,21 @@
             reload() {
                 console.log("reload");
                 let instance = this;
-                $.getJSON("evaluation.json", function (object) {
+                let evaluation = this.$cookies.get('evaluation');
+                if (evaluation == null){
+                    let evalNum = Math.ceil(Math.random() * (2));
+                    console.log("Eval num mount is: " + evalNum)
+                    evaluation = "evaluation" + evalNum + ".json";
+                    instance.$cookies.set('evaluation', JSON.stringify({"evaluation": evaluation}), '7d');
+                }else{
+                    evaluation = evaluation.evaluation;
+                }
+                console.log("Evaluation from reload is: " + evaluation);
+                $.getJSON(evaluation, function (object) {
                     instance.elements = object;
                     instance.fetchNextInstance();
                     instance.evaluationId = '_' + Math.random().toString(36).substr(2, 9);
-                    instance.$cookies.set('evaluationId', JSON.stringify({"evaluationId": instance.evaluationId}), '1d');
+                    instance.$cookies.set('evaluationId', JSON.stringify({"evaluationId": instance.evaluationId}), '7d');
                 });
             },
             reset() {
@@ -587,11 +623,21 @@
                 }
 
                 let instance = this;
-                $.getJSON("evaluation.json", function (object) {
+                let evaluation = this.$cookies.get('evaluation');
+                if (evaluation == null){
+                    let evalNum = Math.ceil(Math.random() * (2));
+                    console.log("Eval num mount is: " + evalNum)
+                    evaluation = "evaluation" + evalNum + ".json";
+                    instance.$cookies.set('evaluation', JSON.stringify({"evaluation": evaluation}), '7d');
+                }else{
+                    evaluation = evaluation.evaluation;
+                }
+                console.log("Evaluation from mount is: " + evaluation);
+                $.getJSON(evaluation, function (object) {
                     instance.elements = object;
                     instance.element = instance.elements[index];
                     instance.assignSummaries();
-                });
+                    });
             }
         }
     }
