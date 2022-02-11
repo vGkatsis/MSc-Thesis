@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import VueCookies from 'vue3-cookies'
 import 'gitart-vue-dialog/dist/style.css'
+import VueClipboard from 'vue-clipboard2'
+import VueBasicAlert from 'vue-basic-alert'
 import { GDialog } from 'gitart-vue-dialog'
 import App from './App.vue'
 
@@ -14,4 +16,4 @@ library.add(faArrowRight);
 
 const app = createApp(App)
 
-app.use(VueCookies).component('GDialog', GDialog).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
+app.use(VueBasicAlert).use(VueClipboard).use(VueCookies).component('GDialog', GDialog).component("font-awesome-icon", FontAwesomeIcon).mount('#app')

@@ -146,21 +146,28 @@
             <!-- Results Mode. -->
             <div class="h-100 w-100 d-flex justify-content-center align-items-center" key="2" v-else-if="resultsMode === true">
                 
-                <div style="position: absolute; right:5%; top:5%; z-index: 1000">
-                    
-                    <button type="button" class="btn btn-dark" v-on:click="switchViewMode">
+                <div style="position: absolute; left:25%; top:10%; z-index: 1000">
+                    <button type="button" class="btn btn-success" @click="copyButton">
+                        COPY
+                    </button>
+                </div>
+                <div style="position: absolute; right:25%; top:10%; z-index: 1000">
+                    <button type="button" class="btn btn-danger" v-on:click="switchViewMode">
                         BACK
                     </button>
-                
                 </div>
                 
                 <div class="h-75 w-75">
                     
-                    <label for="evaluationTextArea"><i><b>Please copy/paste the following text and email it to us at results.claim.justification@gmail.com:</b></i></label>
-                    
-                    <textarea id="evaluationTextArea" class="h-100 w-100" ref="copyThis" v-model="resultsMessage"></textarea>
+                    <div class="row col-12 d-flex justify-content-center align-items-center">
+               
+                        <label style="text-align: center; margin-top: 20px;" for="evaluationTextArea">Please copy/paste the following text and email it to us at <i><b>results.claim.justification@gmail.com</b></i> </label>
+                        <textarea style="margin-top: 30px;" rows="8" readonly id="evaluationTextArea" class="h-50 w-50" ref="copyThis" v-model="resultsMessage"></textarea>
+                        <vue-basic-alert :duration="300" :closeIn="2500" ref="alert" />
+
+                    </div>
+
                 </div>
-            
             </div>
 
             <!-- Annotation Mode. -->
@@ -379,7 +386,7 @@
                     return true;
             }
         },
-        methods: {            
+        methods: {     
             goToIntroduction() {
                 this.introMode=true;
                 this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '7d');    
@@ -393,7 +400,7 @@
                     this.resultsMode = false;
                 else {
                     this.updateResultsGivenId(this.element.id);
-                    let text = "EvaluationId " + this.evaluationId + "\n"
+                    let text = "EvaluationId#" + this.evaluationId + "\n"
                         + "\"id\", \"distortion\", \"emphasis\", \"unfounded\", \"unclear\"";
                     for (let i = 0; i < this.elements.length; i++) {
                         let result = this.results[i];
@@ -408,6 +415,10 @@
                     this.resultsMessage = text;
                     this.resultsMode = true;
                 }
+            },
+            copyButton() {       
+                this.$copyText(this.resultsMessage)
+                this.$refs.alert.showAlert('success', "Message copied to clipboard!", 'Success')
             },
             nextButton() {
                 this.updateResultsGivenId(this.element.id);
@@ -567,7 +578,7 @@
                 $.getJSON(evaluation, function (object) {
                     instance.elements = object;
                     instance.fetchNextInstance();
-                    instance.evaluationId = '_' + Math.random().toString(36).substr(2, 9);
+                    instance.evaluationId = '_' + Math.random().toString(36).substr(2, 9) + "#" + evaluation;
                     instance.$cookies.set('evaluationId', JSON.stringify({"evaluationId": instance.evaluationId}), '7d');
                 });
             },
