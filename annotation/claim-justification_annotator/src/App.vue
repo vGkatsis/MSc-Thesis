@@ -124,7 +124,7 @@
                                     <li>The <b>Back</b>(Left Arrow) and <b>Next</b>(Right Arrow) buttons will allow you to move back and forth between claims.</li><br>
                                     <li>When you have completed the form just click on <b>Submit Results</b>, copy the text that will appear on your screen and mail it to <b>results.claim.justification@gmail.com</b>.</li><br>
                                     <li>The <b>Submit Results</b> button will be available to click after you have completed just <b>one</b> annotation. If for any reason you want to stop and you think that you wont be able to continue the process then please submit the results that you have made so far. </li><br>
-                                    <li>You have been assigned <b>{{ this.elements.length }}</b> claims to annotate. We estimate that each claim will need a maximum of 5 minutes to be annotated. In case you dont want to annotate all of them, we would appreciate it if you could just annotate <b>{{ Math.floor(this.elements.length / 2) }}</b>. </li><br>
+                                    <li>You have been assigned <b>{{ this.elements.length }}</b> claims to annotate. We estimate that each claim will need a maximum of 2 minutes to be annotated. In case you dont want to annotate all of them, we would appreciate it if you could just annotate <b>{{ Math.floor(this.elements.length * 0.6) }}</b>. </li><br>
                                     <li>The annotation tool makes use of <b>cookies</b> and saves your progress for <b>7 days</b> so that you can complete the process in that period. All the choices you have made will be kept if you close the window and restart, but it <b>wont</b> be kept if you clear browser cookies!</li><br>
                                     <li>Lastly if at any moment you want to restart the process all over again, click the <b>RESET</b> button (up right) and everything will be cleaned.</li><br>
                                 </ol>
@@ -636,7 +636,7 @@
                 let instance = this;
                 let evaluation = this.$cookies.get('evaluation');
                 if (evaluation == null){
-                    let evalNum = Math.ceil(Math.random() * (2));
+                    let evalNum = Math.ceil(Math.random() * (3));
                     console.log("Eval num mount is: " + evalNum)
                     evaluation = "evaluation" + evalNum + ".json";
                     instance.$cookies.set('evaluation', JSON.stringify({"evaluation": evaluation}), '7d');
