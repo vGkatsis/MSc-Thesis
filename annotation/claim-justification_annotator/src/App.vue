@@ -567,7 +567,7 @@
                 let instance = this;
                 let evaluation = this.$cookies.get('evaluation');
                 if (evaluation == null){
-                    let evalNum = Math.ceil(Math.random() * (2));
+                   let evalNum = Math.ceil(Math.random() * (3));
                     console.log("Eval num mount is: " + evalNum)
                     evaluation = "evaluation" + evalNum + ".json";
                     instance.$cookies.set('evaluation', JSON.stringify({"evaluation": evaluation}), '7d');
