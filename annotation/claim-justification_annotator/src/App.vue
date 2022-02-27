@@ -246,22 +246,22 @@
                                     <div class="col-4"></div>
                                     <div class="col-6 container justify-content-center">
                                         <div class="form-check" style="margin-bottom: 10px;">
-                                            <input class="form-check-input" type="radio" name="class" id="distortion_radio"
+                                            <input class="form-check-input" type="radio" name="class" id="distortion_radio" v-on:click="selectedDist"
                                                    value="distortion" v-model="distortion">
                                             <label class="form-check-label" for="distortion_radio"> Distortion</label>
                                         </div>
                                         <div class="form-check" style="margin-bottom: 10px;">
-                                            <input class="form-check-input" type="radio" name="class" id="emphasis_radio"
+                                            <input class="form-check-input" type="radio" name="class" id="emphasis_radio" v-on:click="selectedEmp"
                                                    value="emphasis" v-model="emphasis">
                                             <label class="form-check-label" for="emphasis_radio"> Emphasis </label>
                                         </div>
                                         <div class="form-check" style="margin-bottom: 10px;">
-                                            <input class="form-check-input" type="radio" name="class" id="unfounded_radio"
+                                            <input class="form-check-input" type="radio" name="class" id="unfounded_radio" v-on:click="selectedUnf"
                                                    value="unfounded" v-model="unfounded">
                                             <label class="form-check-label" for="unfounded_radio"> Unfounded </label>
                                         </div>
                                         <div class="form-check" style="margin-bottom: 10px;">
-                                            <input class="form-check-input" type="radio" name="class" id="unclear_radio"
+                                            <input class="form-check-input" type="radio" name="class" id="unclear_radio" v-on:click="selectedUnc"
                                                    value="unclear" v-model="unclear">
                                             <label class="form-check-label" for="unclear_radio"> Unclear </label>
                                         </div>
@@ -386,7 +386,7 @@
                     return true;
             }
         },
-        methods: {     
+        methods: {
             goToIntroduction() {
                 this.introMode=true;
                 this.$cookies.set('intro', JSON.stringify({"intro": this.introMode}), '7d');    
@@ -432,48 +432,31 @@
                 this.updateEvaluationGUIGivenId(this.element.id);
                 this.$cookies.set('index', JSON.stringify({"index": this.element.id}), '7d');
             },
+            selectedDist() {
+                this.emphasis = false
+                this.unfounded = false
+                this.unclear = false
+            },
+            selectedEmp() {
+                this.distortion = false
+                this.unfounded = false
+                this.unclear = false
+            },
+            selectedUnf() {
+                this.distortion = false
+                this.emphasis = false
+                this.unclear = false
+            },
+            selectedUnc() {
+                this.distortion = false
+                this.emphasis = false
+                this.unfounded = false
+            },
             confirmButton() {
                 this.updateResultsGivenId(this.element.id);
             },
-            newSeletion() {
-                let selectionCounter = 0;
-                if (this.distortion)
-                    selectionCounter += 1;
-
-                if (this.emphasis)
-                    selectionCounter += 1;
-
-                if (this.unfounded)
-                    selectionCounter += 1;
-
-                if (this.unclear)
-                    selectionCounter += 1;
-
-                if (selectionCounter > 1){
-                    return true;
-                }
-                return false;
-            },
-            clearPreviousSelection(id) {
-                if (id in this.results){
-                    if (this.results[id].distortion)
-                        this.distortion = false;
-
-                    if (this.results[id].emphasis)
-                        this.emphasis = false;
-
-                    if (this.results[id].unfounded)
-                        this.unfounded = false;
-
-                    if (this.results[id].unclear)
-                        this.unclear = false;
-                }
-            },
             updateResultsGivenId(id) {
                 if (this.isValidEvaluation()) {
-                    if (this.newSeletion()){
-                        this.clearPreviousSelection(id)
-                    }
                     this.results[id] = {
                         "id": this.element.id,
                         "distortion": this.distortion,
