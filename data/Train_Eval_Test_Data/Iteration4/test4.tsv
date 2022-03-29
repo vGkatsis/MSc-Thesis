@@ -1,11 +1,13 @@
 	claim	justification_label
-162.json	"Rudy Giuliani is ""probably the most underqualified man since George Bush to seek the presidency."""	unfounded
-9876.json	Says on contraception, his plan is cheaper and easier for you than Sen. Mark Udalls	distortion
-6579.json	Says President Obama and his National Labor Relations Board sued Boeing over its decision to open a plant in South Carolina.	distortion
-3195.json	Says he never said he would keep education funding the same.	unfounded
-4148.json	Since 2000, nearly 12 million Americans have slipped out of the middle class and into poverty.	emphasis
-8187.json	Says Terry McAuliffe is the person who invented the scheme to rent out the Lincoln Bedroom.	unfounded
+12981.json	They were going to build the wall a while ago, not so long ago, like in 06. And they couldnt get environmental impact statements.	distortion
+6697.json	Under Obama, home values in Florida collapsed, construction jobs were lost and the state had a high foreclosure rate.	distortion
 6359.json	President Ronald Reagan sent troops into conflict only in one circumstance, which was in Grenada. We were in a peacekeeping setting in Lebanon.	distortion
-1926.json	We have a director of homeland security who cannot use and will not use the term 'terrorist attack' but instead substitutes 'man-made disaster.' 	unfounded
-13313.json	What I have put forward does not add a penny to the debt.	emphasis
-8210.json	Every year, more than $40 million are leaving Missouri for the Lone Star State.	emphasis
+162.json	"Rudy Giuliani is ""probably the most underqualified man since George Bush to seek the presidency."""	unfounded
+8019.json	In Rhode Island, 9 percent of workers use the states temporary disability insurance program each year while in New Jersey, the rate is only 3 percent.	unfounded
+3782.json	Says Gov. Rick Perry has been begging for the federal government to send the Coast Guard to patrol two lakes on the U.S.-Mexico border.	unfounded
+11536.json	Over 300,000 veterans have died waiting for care.	distortion
+11828.json	We have more illegal immigrants here than we did five years ago.	unfounded
+1800.json	"Military ""recruiting went on at Harvard every single day throughout the time (Kagan) was there."""	emphasis
+12779.json	Says Donald Trump cashed in on Sept. 11,collecting $150,000 in federal funds intended to help small businesses recover even though days after the attack Trump said his properties were not affected.	emphasis
+8489.json	Terry McAuliffe wants to raise your taxes $1,700 to pay for his infinite promises.	emphasis
+7303.json	Washington, D.C., had some of the strictest gun laws in the country. And when they passed them, violence skyrocketed.	emphasis
